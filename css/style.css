@@ -1,0 +1,241 @@
+﻿html {
+    font-size: 110%;
+}
+
+body {
+    margin: auto;
+    padding: 0px;
+    width: 90vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    background-color: #57B0D6;
+    border-radius: 5px;
+}
+
+.page_name {
+    color: #fff;
+    animation: moveInSx 1s ease-out;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.container {
+    width: 60vw;
+    margin: auto;
+    position: relative;
+}
+
+.cv_h2 {
+    text-align: center;
+}
+
+
+#dati_anagrafici ul li {
+    list-style: none;
+    text-decoration:none;
+}
+
+#foto {
+    width: 80%;
+    margin: auto;
+    animation: moveInDx 1s ease-out;
+}
+
+    #foto img {
+        margin: 20px auto;
+        width: 100%;
+        box-shadow: 0 10px 6px -6px aliceblue;
+    }
+
+.thumbnail {
+    width: 200px;
+    margin: auto;
+}
+
+    .thumbnail img {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+.cv_thumbnail img{
+    width:200px;
+    float: left;
+    margin-right:50px;
+}
+
+.btn:link,
+.btn:visited {
+    border-radius: 25px;
+    float: right;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: #c5cde0;
+    transition: all .2s;
+    animation: moveInBottom 1s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.btn:hover {
+    transform: translateY(3px);
+    box-shadow: 0 10px 10px rgba(0, 123, 255, 0.20);
+}
+
+btn:active {
+    transform: translateY(0px);
+}
+
+.nav {
+    width: 100%;
+
+}
+    .nav ul {
+        text-align: justify;
+        padding: 0;
+    }
+        .nav ul li {
+            list-style: none;
+            margin-bottom: 25px;
+            width: 25%;
+            height:35px;
+            display: flex;
+            float:left;
+            background-color: rgba(117, 101, 40, 0.41);
+        }
+
+        .nav ul li:first-child{
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .nav ul li:last-child{
+            border-bottom-right-radius:5px;
+            border-top-right-radius:5px;
+        }
+        .nav ul li:hover{
+            background-color:#57b0d6;
+        }
+            .nav ul li a {
+                margin: auto;
+                display: block;
+                text-decoration: none;
+                text-align:center;
+                color:#fff;
+            }
+
+#partecipanti{
+    clear:both;
+}
+.student {
+    width: 90%;
+    border: solid black 1px;
+    padding: 25px;
+    margin-bottom: 10px;
+    transform: skewX(-12deg);
+}
+
+.forma {
+    width: 150px;
+    height: 150px;
+    float: left;
+    background-color: lightgreen;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    padding: 0px;
+    margin: 10px;
+    transform: skewX(12deg);
+    position: relative;
+    top:-20px;
+}
+
+.stud_text {
+    transform: skewX(12deg);
+}
+
+.stud_img {
+    height: 100%;
+    transform: translateX(-25px);
+}
+
+.stud_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 150%);
+    color: #57b0d6;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.student:hover .stud_caption {
+    transform: translate(-50%, -20%);
+    opacity: 1;
+}
+
+.footer {
+    clear: both;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(37, 83, 102, .6);
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+
+    .footer p {
+        color: #fff;
+        text-align: right;
+        padding-right:50px;
+    }
+
+@keyframes moveInSx {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInDx {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    80% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
